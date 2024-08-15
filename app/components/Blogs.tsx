@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 function Blogs(){
     return(
@@ -13,7 +13,7 @@ function Blogs(){
     
            {/* 1st Blog */}
      <div className="w-full mb-6 md:mb-0 lg:mb-0  bg-[#fbfbfb] border-0 p-2 ">
-        <img src="img/blog/blog4.png" alt="blog-1" className="w-full h-full rounded-t-2xl p-3 transition-all ease-in-out hover:p-2" />
+       <Image width={400} height={400} src="/img/blog/blog4.png" alt="blog-1" className="size-full rounded-t-2xl p-3 transition-all ease-in-out hover:p-2" />
        
       <div className="">
         
@@ -31,8 +31,8 @@ function Blogs(){
    
    {/* 2nd Blog */}
    <div className="w-full mb-6 md:mb-0 lg:mb-0  bg-[#fbfbfb] border-0 p-2">
-        <img src="img/blog/blog5.png" alt="blog-1" className="w-full h-full rounded-t-2xl p-3 transition-all ease-in-out hover:p-2" />
-       
+        <Image width={400} height={400} src="/img/blog/blog5.png" alt="blog-1" className="size-full rounded-t-2xl p-3 transition-all ease-in-out hover:p-2" />
+      
       <div className="">
         
         <p className="font-mono p-1 text-md text-gray-800 hover:text-[#f46f30] opacity-75"><span className="text-[#ff6b55] text-2xl font-extrabold">-</span> August 12, 2022 <span className="text-[#ff6b55] font-extrabold">|</span> Grooming</p>
@@ -49,7 +49,7 @@ function Blogs(){
 
    {/* 3rd Blog */}
   <div className="w-full mb-12 md:mb-0 lg:mb-0  bg-[#fbfbfb] border-0 p-2">
-        <img src="img/blog/blog6.png" alt="blog-1" className="w-full h-full rounded-t-2xl p-3 transition-all ease-in-out hover:p-2" />
+    <Image width={400} height={400} src="/img/blog/blog6.png" alt="blog-1" className="size-full rounded-t-2xl p-3 transition-all ease-in-out hover:p-2" />
        
       <div className="">
         

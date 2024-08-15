@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
 import {Dropdown,Accordion,Button,Popover,Tooltip} from "flowbite-react";
 function Navbars() {
@@ -16,9 +17,9 @@ function Navbars() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
              <Link href="">
-              <img src="img/header2-logo.svg" className="mr-3 h-6 sm:h-9" alt="Scooby Logo" />
+             <Image width={150} height={150} src="img/header2-logo.svg" className="mr-3 h-6 sm:h-9" alt="Scooby Logo" />
               {/* <span className="self-center whitespace-nowrap text-xl font-semibold ">Flowbite React</span> */}
              </Link>
               </div>
@@ -27,7 +28,7 @@ function Navbars() {
     <div className="ml-4 flex items-center space-x-6 ">
                
         <div className="hidden lg:block">
-        <img src="img/icon/h2-menu-active-icon.svg" className="ml-4 absolute mt-6" alt="" />
+        <Image width={10} height={10} src="img/icon/h2-menu-active-icon.svg" className="ml-4 absolute mt-6" alt="" />
         <Dropdown label="Home" inline className="bg-white  text-black  mt-6 hover:block">
       <Link href="#"><Dropdown.Item className=" text-black hover:text-amber-800">Home one</Dropdown.Item>  </Link>
       <Link href="#"><Dropdown.Item className=" text-black hover:text-amber-800">Home Two</Dropdown.Item></Link>
@@ -83,7 +84,7 @@ function Navbars() {
 
     <Tooltip content={ 
       <form action="">
-              <div className="flex text-black bg-white w-64 border-white bg-transparent">
+              <div className="flex text-black bg-white w-64 border-white ">
               <input className="bg-black text-white" type="text" id="search" name="search" placeholder="Your Search..." />
               <Button type="submit" className="bg-transparent mr-6 opacity-40 rounded-none text-black "> 
                 <svg className="w-6 h-6 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -103,7 +104,7 @@ function Navbars() {
 
           <Link href="#">
           <button type="button" className="flex text-sm ring-1 ring-[#ff6b55] rin bg-white hover:bg-[#ff6b55]  rounded-full md:me-0 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600"  aria-expanded="true">
-            <svg className="w-9 h-7 mt-1 text-gray-800   hover:text-[#f6f6f6]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 26 26">
+            <svg className="w-9 h-7 mt-2 pb-1 text-gray-800   hover:text-[#f6f6f6]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 26 26">
              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z"/>
            </svg>
 
@@ -113,7 +114,7 @@ function Navbars() {
         <Link href="#">
         <button type="button" className="flex text-sm bg-white ring-1 ring-[#ff6b55] hover:bg-[#ff6b55]  rounded-full md:me-0 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600"  aria-expanded="true">
         
-        <svg className="w-9 h-8 mt-1 text-gray-800 hover:text-[#f6f6f6]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 26 26">
+        <svg className="w-9 h-8 mt-1 pb-1 text-gray-800 hover:text-[#f6f6f6]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 26 26">
         <path fill-rule="evenodd" d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>
         </svg>
         </button>
@@ -122,7 +123,7 @@ function Navbars() {
         <Link href="#">
         <button type="button" className="flex text-sm ring-1 ring-[#ff6b55] bg-white hover:bg-[#ff6b55]  rounded-full md:me-0 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600"  aria-expanded="true">
         
-         <svg className="w-9 h-8 mt-1 text-gray-800  hover:text-[#f6f6f6]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 26 26">
+         <svg className="w-9 h-8 mt-1 pb-1 text-gray-800  hover:text-[#f6f6f6]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 26 26">
          <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
            </svg>
            </button>

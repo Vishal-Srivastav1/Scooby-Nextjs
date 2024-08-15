@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { PiInstagramLogoThin } from "react-icons/pi";
 import { FaPinterestP } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
@@ -11,10 +12,10 @@ function Footer(){
         <>
     <div className="  bg-[#fff5ed] overflow-hidden">
             
-           <img className=" overflow-hidden absolute lg:h-96 flex min-h-full" src="img/bg/footer-bg.png" alt="" />
+    <Image width={1200} height={1000} className=" overflow-hidden absolute lg:h-96 flex min-h-full" src="/img/bg/footer-bg.png" alt="" />
           
     <div className=" absolute lg:text-center lg:justify-center items-center  lg:translate-x-96 translate-x-3   lg:translate-y-16 ">
-       <img className="hidden lg:block translate-x-80" src="img/icon/footer-tt-vec.svg" alt="" />
+    <Image width={80} height={80} className="hidden lg:block translate-x-80" src="/img/icon/footer-tt-vec.svg" alt="" />
     <h1 className="lg:text-center  mt-12 h-full  text-3xl lg:text-4xl  font-serif font-extrabold text-[#001d23] dark:text-white cursor-text">
     Want <span className="font-normal">To Keep</span>
      </h1>
@@ -34,9 +35,9 @@ function Footer(){
     {/* 1st */}
     <div className=" font-serif p-6 lg:p-0">
     <h1 className="p-3 text-3xl font-serif font-semibold text-[#8a8a8a]">Contacts</h1>
-     <div className=" w-full h-full flex justify-start  sticky"> 
+     <div className=" size-full flex justify-start  sticky"> 
       <div>
-            <img className=" absolute  -translate-x-8 translate-y-6" src="img/icon/phone-icon.svg" alt="" />
+      <Image width={25} height={25} className=" absolute  -translate-x-8 translate-y-6" src="/img/icon/phone-icon.svg" alt="" />
             <ul className="">
                 <li className="p-1">
                     <a href="tel:+880 176 1111 456">+880 176 1111 456</a>
@@ -44,7 +45,7 @@ function Footer(){
                 <li className="p-1 mb-2">
                 <a href="tel:+880 170 1111 000">+880 170 1111 000</a>
                 </li>
-                <img className="absolute  -translate-x-8 translate-y-5" src="img/icon/envelope.svg" alt="" />
+                <Image width={25} height={25} className="absolute  -translate-x-8 translate-y-5" src="/img/icon/envelope.svg" alt="" />
             
                 <li className="p-1">
                     <a href="mailto:info@example.com">info@example.com</a>
@@ -53,7 +54,7 @@ function Footer(){
                 <a href="mailto:info@support.com">info@support.com</a>
                 </li>
 
-                <img className="absolute  -translate-x-8 translate-y-4" src="img/icon/location.svg" alt="" />
+                <Image width={25} height={25} className="absolute  -translate-x-8 translate-y-4" src="/img/icon/location.svg" alt="" />
             
                 <li className="p-1">
                     <a >168/170, Avenue 01, Mirpur</a>

@@ -2,6 +2,7 @@
 import { Textarea, TextInput,Button,Accordion } from "flowbite-react";
 import { TiMail } from "react-icons/ti";
 import { CiUser } from "react-icons/ci";
+import Image from "next/image";
 
 function  Contact(){
    
@@ -10,7 +11,7 @@ function  Contact(){
        
     <div className="flex mb-10 mt-16 max-sm:flex-wrap max-md:flex-wrap w-full items-center justify-center overflow-hidden sticky  cursor-pointer">
         
-        <img className=" absolute opacity-100 w-full h-full" src="img/bg/h2-contact-area.png" alt="bg" />
+        <img className=" absolute opacity-100 size-full" src="img/bg/h2-contact-area.png" alt="bg" />
    
 
     {/* div card 1st */}
@@ -19,7 +20,7 @@ function  Contact(){
       
       
       <div className="mt-3 flex ml-9 ">
-      <img className=" absolute lg:mt-14 mt-9 p-6" src="img/icon/contact-title-vec.svg" alt="" />
+      <Image width={150} height={150} className=" absolute lg:mt-14 mt-9 p-6" src="/img/icon/contact-title-vec.svg" alt="" />
       </div>
       <h5 className=" sticky lg:mt-8 mt-4 p-6 cursor-text text-5xl font-extrabold  font-mono  text-gray-900 dark:text-white">
       Contact
@@ -46,7 +47,7 @@ function  Contact(){
                 <Textarea className="p-6" id="comment" placeholder="Leave a comment..." required rows={4} />
                 </li>
              </ul>
-             <Button className="flex ml-4 mt-4 mb-4 " type="submit" gradientDuoTone="purpleToPink">Submit</Button>
+             <Button className="flex ml-4 my-4 " type="submit" gradientDuoTone="purpleToPink">Submit</Button>
 
 
        </form>
@@ -62,7 +63,7 @@ function  Contact(){
   <div className=" sticky max-w-sm flex justify-center text-center ">
      {/* <img className=" absolute w-full h-full opacity-100  " src="img/bg/h2-contact-area.png" alt="bg" /> */}
       <div  className=" lg:p-10 p-8 md:p-6 -translate-y-10 ">
-      <img className=" sticky " src="img/bg/h2-contact-img.png" alt="" />
+      <Image width={400} height={400} className=" sticky " src="/img/bg/h2-contact-img.png" alt="" />
     </div>
   </div>
     {/*div  card 2nd End */}
@@ -74,7 +75,7 @@ function  Contact(){
          {/* <img className=" absolute w-96 h-full opacity-100 " src="img/bg/h2-contact-area.png" alt="bg" /> */}
       <div  className="">
       <div className="lg:mt-3 flex">
-      <img className=" absolute lg:mt-20 mt-6 p-6" src="img/icon/contact-title-vec.svg" alt="" />
+      <Image width={150} height={150} className=" absolute lg:mt-20 mt-6 p-6" src="/img/icon/contact-title-vec.svg" alt="" />
       </div>
       <h5 className=" sticky lg:mt-12 p-6 ml-3 cursor-text text-5xl font-extrabold  font-mono text-gray-900 dark:text-white">
        FAQ
