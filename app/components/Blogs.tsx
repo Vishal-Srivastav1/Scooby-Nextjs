@@ -48,7 +48,7 @@ function Blogs(){
     {/* 2nd Blog End */}
 
    {/* 3rd Blog */}
-  <div className="w-full mb-12 md:mb-0 lg:mb-0  bg-[#fbfbfb] border-0 p-2">
+  <div className="w-full mb-0 md:mb-0 lg:mb-0  bg-[#fbfbfb] border-0 p-2">
     <Image width={400} height={400} src="/img/blog/blog6.png" alt="blog-1" className="size-full rounded-t-2xl p-3 transition-all ease-in-out hover:p-2" />
        
       <div className="">

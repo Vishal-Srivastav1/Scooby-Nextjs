@@ -28,12 +28,12 @@ export default function Home() {
      <div className="bg-[#f4ede6] p-8 overflow-hidden">
    
    </div>
-      <div className=" flex mt-14 mb-8 ml-7">
+      <div className=" flex mt-0 mb-0 ml-7">
          <span className="font-mono font-light ml-12 mt-5 flex text-right absolute dark:text-white ">Your Pet Our Family</span>
          <img className="w-64 mr-26 opacity-80"  src="img/icon/hero2-text-vect.svg" alt="img" />
       </div>
     
-     <h1 className="ml-7  sticky cursor-text mt-12 p-8 mb-8 flex-wrap text-6xl sm:text-5xl tracking-tighter font-mono font-extrabold text-[#001d23] dark:text-white">
+     <h1 className="ml-7  sticky cursor-text mt-5 p-8 mb-4 flex-wrap text-6xl sm:text-5xl tracking-tighter font-mono font-extrabold text-[#001d23] dark:text-white">
       Your <span className="text-[#ff6b55] ">Pet</span> is Part Of Our Family.
       </h1>
     <div className="flex mb-2 bg-[#f4ede6] sticky overflow-hidden translate-x-6">
